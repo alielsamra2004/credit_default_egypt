@@ -49,7 +49,9 @@ credit_default_egypt/
 ├── README.md
 ├── requirements.txt
 ├── data/
-│   └── egyptian_retail_credit_120k.csv           # dataset (120k rows × 51 cols)
+│   ├── summary_statistics.md                     # Dataset, EDA, and model statistics
+│   ├── validation_report.md                      # Dataset validation (23/23 checks passed)
+│   └── variables_description.md                  # Variable Description
 ├── notebooks/
 │   └── egyptian_credit_bn_analysis_FINAL.ipynb   # Single self-contained analysis notebook
 ├── figures/
@@ -79,9 +81,7 @@ credit_default_egypt/
 │       └── fig_interventional_comparison.png     # do-calculus policy scenarios (Sec. 11)
 └── results/
     ├── results_model_comparison.csv              # Six-model AUC & accuracy by era
-    ├── results_model_comparison_FINAL.csv        # Same (canonical copy produced by notebook)
-    ├── summary_statistics.md                     # Dataset, EDA, and model statistics
-    └── validation_report.md                      # Dataset validation (23/23 checks passed)
+    └──results_model_comparison_FINAL.csv        # Same (canonical copy produced by notebook)
 ```
 
 ## Figures
