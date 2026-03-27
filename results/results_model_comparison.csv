@@ -1,6 +1,0 @@
-,AUC,AUC,AUC,Accuracy,Accuracy,Accuracy
-Model,Bayesian Network (HillClimbSearch),Logistic Regression,Random Forest,Bayesian Network (HillClimbSearch),Logistic Regression,Random Forest
-Era 1: Pre-Bureau (2008–2010),0.6318,0.6801,0.6397,0.688,0.7078,0.6483
-Era 2: Bureau Rollout (2011–2014),0.6635,0.686,0.6247,0.69,0.6696,0.6143
-Era 3: Digital Banking (2015–2019),0.7085,0.7386,0.6856,0.732,0.709,0.6616
-Era 4: Advanced Analytics (2020–2024),0.7352,0.7258,0.6801,0.768,0.6975,0.6646
