@@ -15,7 +15,7 @@ This thesis applies era-stratified Bayesian Network (BN) structure learning to 1
 
 - Era-specific BN structure learning reveals regime-dependent causal architecture that a single pooled model conceals
 - DTI_Ratio is the sole invariant direct parent of Default across all four eras under both BicScore and K2Score
-- BN_BIC AUC improves monotonically: 0.632 → 0.664 → 0.709 → 0.735 (preserving the institutional narrative)
+- BN_BIC AUC improves monotonically: 0.619 → 0.664 → 0.709 → 0.735 (preserving the institutional narrative)
 - BN_K2 achieves higher absolute AUC in Eras 1–3 as a robustness alternative
 - Six-model benchmark: BN_BIC, BN_K2, Logistic Regression, Random Forest, Naive Bayes, XGBoost
 - Informal sector lift: 2.33× (Era 4 diagnostic inference via BN_BIC)
@@ -49,9 +49,10 @@ credit_default_egypt/
 ├── README.md
 ├── requirements.txt
 ├── data/
+│   ├── egyptian_retail_credit_120k.csv           # dataset (120k rows × 51 cols)
+│   ├── variables_description.md                  # All 51 variables: type, range, missing rate, logit coefficients
 │   ├── summary_statistics.md                     # Dataset, EDA, and model statistics
-│   ├── validation_report.md                      # Dataset validation (23/23 checks passed)
-│   └── variables_description.md                  # Variable Description
+│   └── validation_report.md                      # Dataset validation (23/23 checks passed)
 ├── notebooks/
 │   └── egyptian_credit_bn_analysis_FINAL.ipynb   # Single self-contained analysis notebook
 ├── figures/
@@ -81,7 +82,7 @@ credit_default_egypt/
 │       └── fig_interventional_comparison.png     # do-calculus policy scenarios (Sec. 11)
 └── results/
     ├── results_model_comparison.csv              # Six-model AUC & accuracy by era
-    └──results_model_comparison_FINAL.csv        # Same (canonical copy produced by notebook)
+    └── results_model_comparison_FINAL.csv        # Same (canonical copy produced by notebook)
 ```
 
 ## Figures
@@ -184,4 +185,3 @@ networkx>=3.0
 jupyter>=1.0.0
 notebook>=7.0.0
 ```
-
